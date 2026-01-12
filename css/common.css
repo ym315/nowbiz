@@ -465,6 +465,9 @@ img {
   box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.8);
   background: #fff;
 }
+.main_popup .pop_slide div {
+  cursor: pointer;
+}
 .main_popup .popup_btn {
   width: 100%;
   margin: 0 auto;

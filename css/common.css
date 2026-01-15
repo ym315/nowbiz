@@ -465,9 +465,6 @@ img {
   box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.8);
   background: #fff;
 }
-.main_popup .pop_slide div {
-  cursor: pointer;
-}
 .main_popup .popup_btn {
   width: 100%;
   margin: 0 auto;
@@ -522,6 +519,15 @@ img {
   background: #fff;
   width: 400px;
   height: auto;
+}
+.main_pop .pop_slide {
+  cursor: pointer;
+}
+.main_pop .pop_slide div {
+  cursor: pointer;
+}
+.main_pop .pop_slide div img {
+  cursor: pointer;
 }
 .main_pop .slick-prev, .main_pop .slick-next {
   top: 50%;

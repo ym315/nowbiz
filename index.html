@@ -28,6 +28,8 @@
     <meta property="og:image" content="https://giftletter77.hgodo.com/com/sns_thum.png ">
     <meta property="og:url" content="https://www.gift-n.co.kr">
 
+    <link rel="icon" href="./images/common/favicon.ico">
+
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/sub.css" />
     <link rel="stylesheet" href="./css/common.css" />
@@ -40,6 +42,9 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
 
 </head>
 <body>
@@ -362,10 +367,10 @@
 
 
     <article class="main_banners">        
-        <div onclick="window.open('https://www.gift-n.co.kr/Promotion/PromoView?prm_cd=99');">
+        <div onclick="location.href='https://www.gift-n.co.kr/Promotion/PromoView?prm_cd=99'">
             <img src="./images/main/260108_banner_01.jpg" alt="main_banner_event">
         </div>
-        <div onclick="window.open('https://www.gift-n.co.kr/Home/SearchList?searchtext=%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4&pg=1&sort=1');">
+        <div onclick="location.href='https://www.gift-n.co.kr/Brand/BrandList?brand_cd=714'">
             <img src="./images/main/260108_banner_02.jpg" alt="main_banner_event">
         </div>
     </article>
@@ -374,7 +379,12 @@
         <section class="sub_title">
             <h2>인기 상품</h2>
             <span>기프트엔 월간 베스트 상품</span>
-        </section>
+        </section>        
+        <!--
+        260115 요청 코멘트 
+        하단 인기 상품은 기존에 있던 탭메뉴나 카테고리가 아닌 고정 상품입니다.
+        매출 순위 상위권인 인기 상품 10개를 고정으로 띄우고자 합니다.
+        -->
         <section class="tab_container">            
             <ul class="product_list main_item_list main-best">
                 <li>
@@ -529,6 +539,11 @@
 
     </article>
     
+    <!--
+    260115 요청 코멘트 
+    아래 신규 상품 부분은 고정 상품이 아닌 신규 상품을 끌어오는 구조입니다.
+    기존에 있던 탭메뉴/탭 콘텐츠에서 탭 메뉴를 삭제하고 탭 콘텐츠만 끌어오도록 조정하였습니다
+    -->
     <article class="main_newitem pa10">
         <section class="sub_title">
             <h2>신규 상품</h2>
@@ -548,7 +563,6 @@
             </div> -->
             <div id="tab2" class="tab_content">
                 <ul class="product_list main_best_tab">
-
                                 <li>
                                     <div class="product">
                                         <a href="/Brand/GoodsDetail?gds_cd=0000049553">
@@ -715,14 +729,15 @@
             <ul class="item_list main-brand">
                 <li>
                     <div>
-                        <button onclick="javascript: document.location.href = '/Home/SearchList?searchtext=스타벅스&pg=1&sort=1';">
+                        <!-- 스벅 -->
+                        <button onclick="javascript: document.location.href = 'https://www.gift-n.co.kr/Brand/BrandList?brand_cd=714">
                             <img src="./images/main/pop_brand1.png" alt="">
                             <span>최대 <span class="strong">10%</span> 할인</span>
                         </button>
                     </div>
                 </li>
                 <li>
-                    <div>
+                    <div><!--투썸 -->
                         <button onclick="javascript: document.location.href = '/Home/SearchList?searchtext=투썸플레이스&pg=1&sort=1';">
                             <img src="./images/main/pop_brand7.png" alt="">
                             <span>최대 <span class="strong">10%</span> 할인</span>
@@ -730,25 +745,25 @@
                     </div>
                 </li>
                 <li>
-                    <div>
-                        <button onclick="javascript: document.location.href = '/Home/SearchList?searchtext=교촌치킨&pg=1&sort=1';">
+                    <div><!--교촌-->
+                        <button onclick="javascript: document.location.href = 'https://www.gift-n.co.kr/Brand/BrandList?brand_cd=334'">
                             <img src="./images/main/pop_brand3.png" alt="">
                             <span>최대 <span class="strong">10%</span> 할인</span>
                         </button>
                     </div>
                 </li>
                 <li>
-                    <div>
-                        <button onclick="javascript: document.location.href = '/Home/SearchList?searchtext=공차&pg=1&sort=1';">
-                            <img src="./images/main/pop_brand4.png" alt="">
+                    <div><!--컴포즈-->
+                        <button onclick="javascript: document.location.href = '/Home/SearchList?searchtext=컴포즈&pg=1&sort=1';">
+                            <img src="./images/main/pop_brand9.png" alt="">
                             <span>최대 <span class="strong">10%</span> 할인</span>
                         </button>
                     </div>
                 </li>
                 <li>
-                    <div>
-                        <button onclick="javascript: document.location.href = '/Home/SearchList?searchtext=맥도날드&pg=1&sort=1';">
-                            <img src="./images/main/pop_brand5.png" alt="">
+                    <div><!--이디야-->
+                        <button onclick="javascript: document.location.href = '/Home/SearchList?searchtext=이디야&pg=1&sort=1';">
+                            <img src="./images/main/pop_brand8.png" alt="">
                             <span>최대 <span class="strong">10%</span> 할인</span>
                         </button>
                     </div>
@@ -760,7 +775,7 @@
                             <span>최대 <span class="strong">10%</span> 할인</span>
                         </button>
                     </div>
-                </li>
+                </li>                
             </ul>
 
         </section>
@@ -828,7 +843,7 @@
                     
                     <li>
                         <div class="item">
-                            <button onclick="javascript: document.location.href = '/Brand/BrandList?brand_cd=616';">
+                            <button onclick="javascript: document.location.href = '/Brand/BrandList?brand_cd=761';">
                                 <img src="./images/main/brand_thum32.jpg" alt="">
                                 <p class="brand_info_txt white">
                                     신선한 재료와 깊은 풍미로,

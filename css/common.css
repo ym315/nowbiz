@@ -206,8 +206,8 @@ img {
 }
 
 .main_logo {
-  width: 100%;
-  max-width: 130px;
+  width: auto;
+  max-width: 153px;
   margin: 0 auto;
   text-align: center;
 }

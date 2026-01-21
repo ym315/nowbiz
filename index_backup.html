@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+
+
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <!-- Google tag (gtag.js) -->
@@ -9,7 +11,7 @@
         gtag('js', new Date());
         gtag('config', 'G-FMWNTDL0T8');
     </script>
-    <title>기프트엔 - 기업 전용 모바일 쿠폰 대량 발송</title>
+    <title>기프트엔 – 기업 전용 모바일 쿠폰 대량 발송</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="GiftN" />
@@ -36,6 +38,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 
 
 
@@ -126,7 +129,17 @@
 <script type="text/javascript">
     var posY;
     $(document).ready(function () {
+
         checkCookie2();
+        // checkCookie3(); 
+        // $('.main_popup.popup1 .btn_close, .popup .btn_ok').click(function () {
+        //     $('.main_popup.popup1').fadeOut();
+        //     bodyUnfreezeScroll()
+        // });        
+        // $('.main_popup.popup10 .btn_close').click(function () {
+        //     $('.main_popup.popup10').fadeOut();
+        //     bodyUnfreezeScroll()
+        // });
         $('.main_pop .btn_close').click(function () {            
             $('.main_pop').fadeOut();
             bodyUnfreezeScroll()
@@ -316,9 +329,12 @@
         </ul>
     </div> -->
 
-    <article class="main_banners">
-        <div onclick="">            
-            <img src="">
+    <article class="main_banners">        
+        <div onclick="location.href='https://www.gift-n.co.kr/Promotion/PromoView?prm_cd=99'">
+            <img src="./images/main/260108_banner_01.jpg" alt="main_banner_event">
+        </div>
+        <div onclick="location.href='https://www.gift-n.co.kr/Brand/BrandList?brand_cd=714'">
+            <img src="./images/main/260108_banner_02.jpg" alt="main_banner_event">
         </div>
     </article>
 
@@ -327,6 +343,11 @@
             <h2>인기 상품</h2>
             <span>기프트엔 월간 베스트 상품</span>
         </section>        
+        <!--
+        260115 요청 코멘트 
+        하단 인기 상품은 기존에 있던 탭메뉴나 카테고리가 아닌 고정 상품입니다.
+        매출 순위 상위권인 인기 상품 10개를 고정으로 띄우고자 합니다.
+        -->
         <section class="tab_container">            
             <ul class="product_list main_item_list main-best">
                 <li>
@@ -520,6 +541,7 @@
                 </ul>
             </div> -->
         </section>
+
         <section class="more_info">
             <button onclick="location.href = '/Brand/Brand'">
                 상품 더보기 +
@@ -538,7 +560,7 @@
                 <li>
                     <div>
                         <!-- 스벅 -->
-                        <button onclick="javascript: document.location.href = 'https://www.gift-n.co.kr/Brand/BrandList?brand_cd=714'">
+                        <button onclick="javascript: document.location.href = 'https://www.gift-n.co.kr/Brand/BrandList?brand_cd=714">
                             <img src="./images/main/pop_brand1.png" alt="">
                             <span>최대 <span class="strong">10%</span> 할인</span>
                         </button>
@@ -766,12 +788,110 @@
                             </button>
                         </div>
                     </li>                    
+                    <!-- 
+                    <li>
+                        <div>
+                            <button onclick="javascript: document.location.href = '/Brand/BrandList?brand_cd=673';">
+                                <img src="/images/main/brand_thum19.jpg" alt="">
+                                <p class="brand_info_txt white ">
+                                    한국인의 입맛에 맞추어 전문화한 깊고 진한 맛의 전통 일본식 라멘, 와다라멘
+                                </p>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <button onclick="javascript: document.location.href = '/Brand/BrandList?brand_cd=664';">
+                                <img src="./images/main/brand_thum18.jpg" alt="">
+                                <p class="brand_info_txt white">
+                                    대한민국이 사랑하는 찌개 NO.1 김치찌개! 평범한듯 남다른 찌개와 다양한 사이드 메뉴
+                                </p>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <button onclick="javascript: document.location.href = '/Brand/BrandList?brand_cd=637';">
+                                <img src="./images/main/brand_thum13.jpg" alt="">
+                                <p class="brand_info_txt white">
+                                    아시안 음식을 합리적인 가격에 최상의 맛으로. 한국에서 만나는 현지의 맛
+                                </p>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <button onclick="javascript: document.location.href = '/Brand/BrandList?brand_cd=641';">
+                                <img src="./images/main/brand_thum14.jpg" alt="">
+                                <p class="brand_info_txt white">
+                                    특별한 한 끼를 책임지는 가성비 최고 프리미엄 초밥 도시락 전문점 로봇 초밥 마켓
+                                </p>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <button onclick="javascript: document.location.href = '/Brand/BrandList?brand_cd=654';">
+                                <img src="./images/main/brand_thum15.jpg" alt="">
+                                <p class="brand_info_txt white">
+                                    감성과 재미가 터지는 200평 규모의 핫 플레이스, 워터파크부터 수상스키까지
+                                </p>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                    <div>
+                        <button onclick="javascript: document.location.href = '/Brand/BrandList?brand_cd=655';">
+                            <img src="./images/main/brand_thum16.jpg" alt="">
+                            <p class="brand_info_txt white">
+                                다양한 시설의 워터파크부터 뷰티존, 사우나, 편의 시설까지 완벽한 힐링 브릿지
+                            </p>
+                        </button>
+                    </div>
+                    </li>
+                    -->
                 </ul>
             </section>
         </div>
     </article>
+    <!-- 230104 베스트 브랜드 추가/231017 수정 -->
 
-    <!-- <article class="brand_con maxwidth">
+
+
+
+
+
+
+
+
+    <!-- <article class="maxwidth pa10">
+        <section class="sub_title">
+            <h2>이벤트</h2>
+            <span>지금 진행중인 이벤트를 확인하세요!</span>
+        </section>
+        <section>
+            <ul class="event_list">
+                        <li>
+                            <a href="/Promotion/PromoView?prm_cd=99" target="_parent">
+                                <img src="https://image.gift-n.net/gbm/banner/prom/99.jpg" alt="event_banners">
+                            </a>
+                        </li>
+            </ul>
+        </section>
+        <section class="more_info">
+            <button onclick="location.href = '/Promotion/PromoList'">
+                이벤트 더보기 +
+            </button>
+        </section>
+    </article> 
+    <article class="pa10 line_banner" OnClick="location.href ='#'">
+        <div>
+            <img src="/images/main/line_nabber1.png" alt="small_line_event_banner" onclick="location.href='/Home/SearchList?searchtext=스타벅스&pg=1&sort=1'">
+        </div>
+    </article>
+ 
+
+    <article class="brand_con maxwidth">
         <section class="sub_title">
             <h2>브랜드</h2>
             <span>커피/음료부터 외식 브랜드까지</span>
@@ -1605,8 +1725,8 @@
             </button>
         </section>
 
-    </article> -->
-
+    </article>
+-->
     <article class="contact_grade maxwidth pa10">
         <section class="contact short">
             <ul>
@@ -1796,22 +1916,27 @@
         });
     </script>
 
+
+
+
+
     <script type="text/javascript">
         $(function () {
             //랜덤뿌리기
             function shuffleList(selector) {
-                var $ul = $(selector);
-                if ($ul.length === 0) return;
+        var $ul = $(selector);
+        if ($ul.length === 0) return;
 
-                var $li = $ul.children('li');
+        var $li = $ul.children('li');
 
-                $li.sort(function () {
-                    return Math.random() - 0.5;
-                }).appendTo($ul);
-            }
-            // 랜덤 적용 대상
-            shuffleList('.main-best');
-            shuffleList('.main-brand');
+        $li.sort(function () {
+            return Math.random() - 0.5;
+        }).appendTo($ul);
+    }
+
+    // 랜덤 적용 대상
+    shuffleList('.main-best');
+    shuffleList('.main-brand');
         });
         $(document).on('ready', function () {
             $(".quick_list").slick({

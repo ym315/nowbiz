@@ -1814,7 +1814,7 @@ img {
 
 .condition_set .brand_list .con_box {
   width: 100%;
-  max-height: 600px;
+  max-height: 300px;
   padding: 30px;
   overflow-y: scroll;
   border: 1px solid #ddd;
@@ -1851,8 +1851,10 @@ img {
   left: 0;
   right: 0;
   margin: 0 auto;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
 }
 
 .condition_set .price_range .tit {
